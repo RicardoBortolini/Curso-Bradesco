@@ -1,0 +1,68 @@
+:root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body{
+    font-family: monospace;
+}
+
+/* Tema Claro */
+.light-theme{
+    --bg:var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+/* Tema Escuro */
+.dark-theme{
+    --bg:var(--black);
+    --fontColor: var(--green);
+    --btnBg:var(--white);
+    --btnFontColor: var(--black);
+}
+
+/* Aplicando variáveis */
+body{
+    background: var(--bg);
+    color: var(--fontColor);
+}
+
+/* Lista */
+ul{
+    font-family: Helvetica;
+}
+
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+    font-family: Helvetica;
+    font-size: 300%;
+}
+
+/* Botão */
+.btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+    
+    border-radius: 50%;
+    border: none;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    cursor: pointer;
+
+}
+
+    
+#msg{
+    font-family: Helvetica;
+    font-size: 50px;
+}
